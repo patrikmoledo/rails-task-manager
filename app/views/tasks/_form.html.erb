@@ -1,0 +1,11 @@
+<%= form_for(@task) do |f| %>
+  <div>
+    <%= label_tag :title, "Title" %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= label_tag :details, "Details" %>
+    <%= f.text_area :details %>
+  </div>
+  <%= f.submit %>
+<% end %>
